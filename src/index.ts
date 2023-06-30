@@ -1,5 +1,9 @@
 import express, { Request, Response } from "express";
+import dotenv from "dotenv";
 import "colors";
+
+// Load required env. vars
+dotenv.config({});
 
 const app = express();
 const subdomain = process.env.SUB_DOMAIN;
